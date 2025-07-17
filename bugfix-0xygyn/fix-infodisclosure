@@ -1,0 +1,10 @@
+Recommended fix for security issue 203:
+
+Since the "MarketPlace Model" functionality does not require any API calls to another user's profile,
+
+Commenting out that API call to /api/user/(the 6 IDs called) in the code base is what is required to fix this vulnerability.
+
+###COMMENT OUT THE API CALL TO THAT ENDPOINT. 
+
+Also, disabling the API endpoint /api/user/ID is required from the API Collection since /api/users/ID exist.
+
