@@ -1,0 +1,5 @@
+Recommendation for Rate-Limit Bypass via Race condition:
+
+Use semaphore. mutex or thread locking to prevent concurrency / thread related attacks.
+
+An example is th below code, it can be 
